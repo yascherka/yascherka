@@ -1,21 +1,25 @@
+var populate_modal = function(image) {
 	// Get the modal
 	var modal = document.getElementById('myModal');
-
+	// https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+	var modalImg = modal.querySelector("img");
+	var captionText = modal.querySelector("figcaption");
 	// Get the image and insert it inside the modal - use its "alt" text as a caption
-
-	var modalImg = document.getElementById("img01");
-	var captionText = document.getElementById("caption");
-	var img = document.getElementById("imgA");
-	img.onclick = function(){
-	    modal.style.display = "block";
-	    modalImg.src = this.src;
-	    captionText.innerHTML = this.alt;
-	}
-
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	modalImg.width = this.width;
+	modalImg.height = this.height;
+	captionText.innerHTML = this.alt;
 	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
+	var span = modal.querySelector(".close");
 
 	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() { 
+	modal.onclick = function() { 
 	  modal.style.display = "none";
 	}
+}
+
+var images = document.querySelectorAll("img");
+for (var image of images) {
+	image.onclick = populate_modal;
+}
