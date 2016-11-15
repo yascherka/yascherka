@@ -2,26 +2,33 @@
 <head>
 	<title>Portfolio 2016</title>
 	<link href="styles_resume.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="../responsive-nav.css">
+	<script src="../responsive-nav.js"></script>
 	<style>
       a.1{text-decoration:none}
 	</style>
 </head>
 <body>
-	<div id="toprow">
-		<div id="header">
-			<img src="../images/topnav.svg" alt="Yulia" />
+	<header>
+		<div class="container">
+			<img id="yulia" src="../images/topnav.svg" alt="Yulia" />
+			<img id="yasch" src="../images/ya_logo.svg" alt="yascherka" />
+			<nav class="nav-collapse">
+				<ul id="topnav">
+					<a href="../index.html">Portfolio</a>
+					<a href="index.html">Resume</a>
+					<a href="../About/index.html">About</a>
+				</ul>
+			</nav>
 		</div>
-		<img id="yasch" src="../images/ya_logo.svg" alt="yascherka" />
-		<nav id="topnav">
-			<a href="../index.html">Portfolio</a>
-			<a href="resume/index.html">Resume</a>
-			<a href="../About/index.html">About</a>
-		</nav>
-	</div><br>
+	</header><br><br><br><br>
 	<img id="resume" src="YuliaIssa_Resume_2016.svg" alt="resume" />
 <footer>
 	<div id="email">yulia.issa@gmail.com</div><br>
 	<a href="https://www.facebook.com/yulia.issa"><img id="fb" src="../images/fb_logo.svg" alt="fb link" /></a>
 </footer>
+<script>
+  		var nav = responsiveNav(".nav-collapse");
+</script>
 </body>
 </html>
