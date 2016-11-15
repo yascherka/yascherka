@@ -19,7 +19,8 @@ var populate_modal = function(image) {
 	}
 }
 
-var images = document.querySelectorAll("img");
+var images = document.querySelectorAll(".caption");
 for (var image of images) {
 	image.onclick = populate_modal;
 }
+

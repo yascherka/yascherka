@@ -1,30 +1,39 @@
 <html>
 <head>
-	<title>Porlfolio 2016</title>
+	<title>Portfolio 2016</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
 	<link href="styles.css" rel="stylesheet" type="text/css"/>
 	<link href="modal.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 	<header>
-		<img src="images/topnav.svg" alt="Yulia" />
-		<img id="yasch" src="images/ya_logo.svg" alt="yascherka" />
-		<nav id="topnav">
-			<a href="index.html">Portfolio</a>
-			<a href="resume/resume.html">Resume</a>
-			<a href="Contact.html">Contact</a>
-		</nav>
+		<div id="wrapper">
+			<img id="yulia" src="images/topnav.svg" alt="Yulia" />
+			<img id="yasch" src="images/ya_logo.svg" alt="yascherka" />
+			<nav id="topnav">
+				<a href="index.html">Portfolio</a>
+				<a href="resume/index.html">Resume</a>
+				<a href="About/index.html">About</a>
+			</nav>
+		</div>
 	</header>
 	<div id="picrow1">
 		<div class="container">
-			<img class="caption" id="imgA" src="images/Group poster.svg" alt="Group poster" /></a>
-			<img class="caption" src="images/Newspaper.svg" alt="Newspaper" />
-			<img class="caption" src="images/Tea package.svg" alt="Tea pack" />
+			<img class="caption" id="imgA" src="images/Group poster.svg" alt="Poster design" />
+			<img class="caption" src="images/Newspaper.svg" alt="Newspaper design" />
+			<img class="caption" src="images/Tea package.svg" alt="Package design" />
 		</div>
 	</div>
 	<div class="picrow">
 		<div class="container">
-			<img class="caption" src="images/Dance poster.svg" alt="Dance poster" />
-			<img class="caption" src="images/Portrait.svg" alt="Portrait" />
+			<img class="caption" src="images/Dance poster.svg" alt="Poster design" />
+			<img class="caption" src="images/Portrait.svg" alt="Line rhythm" />
 			<img class="caption" src="images/Logo.svg" alt="Logo design" />
 		</div>
 	</div>
@@ -35,19 +44,22 @@
 			<img class="caption" src="images/Annual report.svg" alt="Annual report" />
 		</div>
 	</div>
-	<div class="container">
-		<img class="caption" src="images/Charcoal.svg" alt="Charcoal" />
-		<img class="caption" src="images/Architecture.svg" alt="Architecture" />
-		<img class="caption" src="images/Pastel.svg" alt="Pastel" />
+	<div class="picrow">
+		<div class="container">
+			<img class="caption" src="images/Charcoal.svg" alt="Charcoal on paper" />
+			<img class="caption" src="images/Architecture.svg" alt="Architectural grid" />
+			<img class="caption" src="images/Pastel.svg" alt="Pastel on paper" />
+		</div>
 	</div>
 	<footer>
-		<p id="email">yulia.issa@gmail.com</p>
-		<a href="https://www.facebook.com/yulia.issa"><img id="fb" src="images/fb_logo.svg" alt="fb link"></a>
+		<div id="email">yulia.issa@gmail.com</div><br>
+		<a href="https://www.facebook.com/yulia.issa"><img id="fb" src="images/fb_logo.svg" alt="fb link" /></a>
 	</footer>
 	<figure id="myModal" class="modal">
 		<img class="modal-content">
 		<figcaption></figcaption>
 	</figure>
 	<script src="yascherka.js" type="text/javascript"></script>
+	<script src="logo.js" type="text/javascript"></script>
 </body>
 </html>

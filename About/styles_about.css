@@ -1,0 +1,82 @@
+body {
+	font-family: hero, helvetica, verdana, sans serif;
+	font-size: 150%;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	background-color: #FCFCFC;
+	text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: #8C8C8C;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #E5675A;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #F4B5A6;
+}
+
+a:active {
+    text-decoration: none;
+    color: #2B1E1D;
+}
+
+
+header {
+	border-bottom: 5px solid #939597;
+	position: fixed;
+	background: #FFFFFF;
+	min-width: 1350px; 
+	height: 60px;
+	padding-top: 1%
+
+}
+
+#header {
+	float: left;
+	padding-left: 3%
+}
+
+#yasch {
+	height:90%;
+}
+
+#topnav {
+	float: right;
+	padding-right: 2%;
+	padding-top: 1%;
+	font-size: 110%;
+
+}
+
+#resume {
+	padding-top: 50px;
+	width: 90%;
+}
+
+footer {
+	height: 100px;
+	background-color: #2B1E1D;
+	color: #FFFFFF;
+	padding: 2%;
+	margin-top: 1%;
+}
+
+#fb {
+	float: right;
+	padding-right: 5%;
+	padding-top: 1%;
+}
+
+#email {
+	float: right;
+	padding-right: 5%;
+}
+
